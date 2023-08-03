@@ -1,0 +1,12 @@
+version: "3.4"
+
+services: 
+  apimsa:
+    image: "apimsa"
+    build: ./apimsa
+    ports:
+    - 127.0.0.1:8000:80
+    volumes:
+    - ./models:/models
+    # environment:
+    #   - ROOT_PATH=/apimsa
